@@ -19,10 +19,10 @@ services:
     ports:
       - "127.0.0.1:8081:8081"
     environment:
-      ME_CONFIG_MONGODB_URL: mongodb://krishna:krishna@mongodb:27017/?authSource=admin
+      ME_CONFIG_MONGODB_URL: DB_URI
       ME_CONFIG_BASICAUTH_ENABLED: "true"
-      ME_CONFIG_BASICAUTH_USERNAME: admin
-      ME_CONFIG_BASICAUTH_PASSWORD: krishna
+      ME_CONFIG_BASICAUTH_USERNAME: DB_USERNAME
+      ME_CONFIG_BASICAUTH_PASSWORD: DB_PASSWORD
     depends_on:
       - mongodb
 
